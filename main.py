@@ -11,7 +11,7 @@ from state import States
 import json_api
 
 
-API_TOKEN = '5134362253:AAEENZXlaJEYgH9QWYsuBRlmUnVmsXU6xBk'
+API_TOKEN = ''
 
 GIFS_DO_IT = [
     'https://c.tenor.com/4hK93XWHuDwAAAAC/sterkte-macht.gif',
@@ -173,12 +173,6 @@ async def states_time(message: types.Message, state):
 
 @dp.message_handler()
 async def states(message: types.Message):
-    if message.from_user.id != 842796728:
-        await bot.send_message('842796728',
-                               text=f'Username: <b>{message.from_user.first_name if message.from_user.username is None else message.from_user.username}</b>\n'
-                                    f'UserId: <b>{message.from_user.id}</b>\n'
-                                    f'Message text: <i>{message.text}</i>',
-                               parse_mode='HTML')
     try:
         symbol = str(message.text[0])
         num = int(message.text[1:])
