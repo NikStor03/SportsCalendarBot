@@ -2,10 +2,10 @@
 
 # Usage
 
-/menu - show all challange\n
-/table - show your daily activity\n
-+{num} - add to daily activity {num}\n
--{num} - dellete from daily activity {num}\n
+/menu - show all challange<br>
+/table - show your daily activity<br>
++{num} - add to daily activity {num}<br>
+-{num} - dellete from daily activity {num}<br>
 
 # Photos
 ![image](https://user-images.githubusercontent.com/67559040/160256540-9da4c861-ea7f-45d3-8b11-ba109bde595b.png)
